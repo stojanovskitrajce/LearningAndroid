@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
                         RelativeLayout.LayoutParams.WRAP_CONTENT
                 );
         username.setWidth(500);
-        myButton.setId(1);
+
 
         editDetails.setMargins(0,0,0,50);
         editDetails.addRule(RelativeLayout.ABOVE,myButton.getId());
@@ -45,6 +45,7 @@ public class MainActivity extends Activity {
         setContentView(myLayout);
 
 myLayout.addView(username,editDetails);
-
+        myButton.setId(1);
+        username.setId(2);
     }
 }
